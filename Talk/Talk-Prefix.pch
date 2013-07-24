@@ -1,0 +1,128 @@
+//
+// Prefix header for all source files of the 'Talk' target in the 'Talk' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+   
+    #import <objc/runtime.h>
+ 
+    #import "TalkAppDelegate.h"
+    #import "TalkXMPPService.h"
+    #import "TalkAWSService.h"
+    #import "TalkPushService.h"
+    #import "TalkHTTPService.h"
+    #import "TalkAWSS3Service.h"
+    #import "FileHelper.h"
+    #import "Reachability.h"
+    #import "ATPagingView.h"
+    #import "Define.h"
+    #import "IAccountRepository.h"
+
+  
+    #import "ILocationRepository.h"
+ 
+    #import "TalkDataFactory.h"
+    #import "TalkUIAlertView.h"
+  
+    #import "ATPagingView.h"
+    #import "TalkLocationService.h"
+   
+#endif
+#define kAppId @""
+#define kTalkAppHostName @""
+#define fbAppId @""
+#define kXmppServer @""
+#define kXmppPort @""
+#define kTalkAPIHost @""
+#define kAPP_NAME @"harveytalk"
+#define AWS_SECRET_KEY @""
+#define AWS_ACCESS_KEY_ID @""
+//// RESOURCE DIRECTORY
+#define VIDEO_FOLDER @"video"
+#define IMAGE_PROFILE_FOLDER @"image-profile-temp"
+#define IMAGE_FOLDER [NSTemporaryDirectory()  stringByAppendingPathComponent:@"images"]
+#define PATH_FOR_VIDEO(fileName) [[DOCUMENTS_DIR() stringByAppendingPathComponent:@"video"] stringByAppendingPathComponent:fileName]
+//// EMOJI HELPER
+#define kEmojiHelperPreferencesFile	@"/private/var/mobile/Library/Preferences/com.apple.Preferences.plist"
+#define kEmojiKey	@"KeyboardEmojiEverywhere"
+//S3
+#define Talk_DEV_BUCKET  @"sameasyou-dev"//dev
+#define kTalkStatusNetAPIHost @""
+
+
+
+
+
+
+
+#ifndef METTER_TO_FEET_CONSTANT
+#define METTER_TO_FEET_CONSTANT	3.2808399
+#endif
+
+#ifndef FEET_TO_METTER_CONSTANT
+#define FEET_TO_METTER_CONSTANT	0.3048
+#endif
+
+#ifndef metterToFeet//(x)
+#define metterToFeet(x) (x * METTER_TO_FEET_CONSTANT)
+#endif
+
+#ifndef feetToMetter//(x)
+#define feetToMetter(x) (x / METTER_TO_FEET_CONSTANT)
+#endif
+
+#ifndef metterToPixcel//(x)
+#define metterToPixcel(x) (x * PIXCEL_PER_MEETER)
+#endif
+
+#ifndef pixcelToMetter//(x)
+#define pixcelToMetter(x) (x / PIXCEL_PER_MEETER)
+#endif
+
+#ifndef feetToPixcel//(x)
+#define feetToPixcel(x) (x * FEET_TO_METTER_CONSTANT * PIXCEL_PER_MEETER)
+#endif
+
+#ifndef pixcelToFeet//(x)
+#define pixcelToFeet(x) ((x / PIXCEL_PER_MEETER) * METTER_TO_FEET_CONSTANT)
+#endif
+
+#ifndef feetToInch//(x)
+#define feetToInch(x) (x * 12)
+#endif
+
+#ifndef inchToFeet//(x)
+#define inchToFeet(x) (x / 12)
+#endif
+
+#ifndef inchToMetter//(x)
+#define inchToMetter(x) (x * 0.0254)
+#endif
+
+#ifndef inchToFeet//(x)
+#define inchToFeet(x) (x * 0.0833333333)
+#endif
+
+
+
+
+
+// Convenient macros
+#define localizeString(key) [[gDataService localize] localizeString:key]
+
+#define callback(method) if (method) method()
+#define callbackWithParameter(method, param) if (method) method(param)
+#define callbackWithParameters(method, param1, param2) if (method) method(param1,param2)
+
+
+
+#define kFaceBookDidLogin @"kFaceBookDidLogin"

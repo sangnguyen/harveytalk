@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--ignore</key>
+	<array>
+		<string>build</string>
+		<string>Libs</string>
+		<string>docset</string>
+	</array>
+	<key>--project-company</key>
+	<string>TPL</string>
+	<key>--project-name</key>
+	<string>SAY</string>
+	<key>--company-id</key>
+	<string>com.tpl</string>
+	<key>--verbose</key>
+	<integer>4</integer>
+	<key>--keep-undocumented-objects</key>
+	<true/>
+	<key>--keep-undocumented-members</key>
+	<true/>
+	<key>--search-undocumented-doc</key>
+	<true/>
+	<key>--logformat</key>
+	<string>xcode</string>
+	<key>--exit-threshold</key>
+	<string>2</string>
+</dict>
+</plist>
