@@ -27,7 +27,7 @@ void TalkExceptionHandler (NSException *exception);
 #pragma mark - Intialize Social Networks
 - (void) initializeServices{
     // Init services
-   
+   // test
     
     gXmpp           = [TalkXMPPService sharedInstance];
 }
