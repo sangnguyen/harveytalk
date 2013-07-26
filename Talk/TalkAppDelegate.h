@@ -7,6 +7,7 @@
 
 #define HAS_CHECKED_EXPIRATION_AT_LAUCH @"check_expire_at_lauch"
 /// Global variables
+//
 @class TalkAppDelegate;
 extern TalkAppDelegate *gAppDelegate;
 
