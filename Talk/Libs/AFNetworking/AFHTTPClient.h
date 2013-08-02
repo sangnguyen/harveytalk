@@ -131,7 +131,7 @@ extern NSString * AFQueryStringFromParametersWithEncoding(NSDictionary *paramete
  The url used as the base for paths specified in methods such as `getPath:parameteres:success:failure`
  */
 @property (readonly, nonatomic, retain) NSURL *baseURL;
-
+- (void)setBaseURL:(NSURL *)baseURL;
 /**
  The string encoding used in constructing url requests. This is `NSUTF8StringEncoding` by default.
  */

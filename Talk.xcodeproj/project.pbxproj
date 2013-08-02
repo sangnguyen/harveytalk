@@ -312,6 +312,19 @@
 		668773AE179F7EBC007B8D8B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668773AD179F7EBC007B8D8B /* CoreData.framework */; };
 		668773BA179F8140007B8D8B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668773B9179F8140007B8D8B /* FacebookSDK.framework */; };
 		668773DC179F82FC007B8D8B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668773DB179F82FC007B8D8B /* AdSupport.framework */; };
+		66AC180617AB5F6400C9E3A8 /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17EF17AB5F6400C9E3A8 /* DIOSComment.m */; };
+		66AC180717AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17F117AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.m */; };
+		66AC180817AB5F6400C9E3A8 /* DIOSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17F317AB5F6400C9E3A8 /* DIOSEntity.m */; };
+		66AC180917AB5F6400C9E3A8 /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17F517AB5F6400C9E3A8 /* DIOSFile.m */; };
+		66AC180A17AB5F6400C9E3A8 /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17F717AB5F6400C9E3A8 /* DIOSNode.m */; };
+		66AC180B17AB5F6400C9E3A8 /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17F917AB5F6400C9E3A8 /* DIOSSession.m */; };
+		66AC180C17AB5F6400C9E3A8 /* DIOSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17FB17AB5F6400C9E3A8 /* DIOSSystem.m */; };
+		66AC180D17AB5F6400C9E3A8 /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17FD17AB5F6400C9E3A8 /* DIOSTaxonomy.m */; };
+		66AC180E17AB5F6400C9E3A8 /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC17FF17AB5F6400C9E3A8 /* DIOSUser.m */; };
+		66AC180F17AB5F6400C9E3A8 /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AC180117AB5F6400C9E3A8 /* DIOSView.m */; };
+		66AC181017AB5F6400C9E3A8 /* drupal-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 66AC180217AB5F6400C9E3A8 /* drupal-ios-sdk.podspec */; };
+		66AC181117AB5F6400C9E3A8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 66AC180317AB5F6400C9E3A8 /* LICENSE */; };
+		66AC181217AB5F6400C9E3A8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 66AC180417AB5F6400C9E3A8 /* README.md */; };
 		6F899D3816708E00008444E3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F899D3716708E00008444E3 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6F899D3C16708E0F008444E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F899D3B16708E0F008444E3 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D8B9B9141600D060009B094A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B9B9131600D060009B094A /* AssetsLibrary.framework */; };
@@ -799,6 +812,30 @@
 		668773AD179F7EBC007B8D8B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		668773B9179F8140007B8D8B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Talk/Libs/FacebookSDK.framework; sourceTree = "<group>"; };
 		668773DB179F82FC007B8D8B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		66AC17EE17AB5F6400C9E3A8 /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
+		66AC17EF17AB5F6400C9E3A8 /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
+		66AC17F017AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSCSRFAFHTTPClient.h; sourceTree = "<group>"; };
+		66AC17F117AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSCSRFAFHTTPClient.m; sourceTree = "<group>"; };
+		66AC17F217AB5F6400C9E3A8 /* DIOSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSEntity.h; sourceTree = "<group>"; };
+		66AC17F317AB5F6400C9E3A8 /* DIOSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSEntity.m; sourceTree = "<group>"; };
+		66AC17F417AB5F6400C9E3A8 /* DIOSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSFile.h; sourceTree = "<group>"; };
+		66AC17F517AB5F6400C9E3A8 /* DIOSFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSFile.m; sourceTree = "<group>"; };
+		66AC17F617AB5F6400C9E3A8 /* DIOSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSNode.h; sourceTree = "<group>"; };
+		66AC17F717AB5F6400C9E3A8 /* DIOSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSNode.m; sourceTree = "<group>"; };
+		66AC17F817AB5F6400C9E3A8 /* DIOSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSession.h; sourceTree = "<group>"; };
+		66AC17F917AB5F6400C9E3A8 /* DIOSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSession.m; sourceTree = "<group>"; };
+		66AC17FA17AB5F6400C9E3A8 /* DIOSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSystem.h; sourceTree = "<group>"; };
+		66AC17FB17AB5F6400C9E3A8 /* DIOSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSystem.m; sourceTree = "<group>"; };
+		66AC17FC17AB5F6400C9E3A8 /* DIOSTaxonomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSTaxonomy.h; sourceTree = "<group>"; };
+		66AC17FD17AB5F6400C9E3A8 /* DIOSTaxonomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSTaxonomy.m; sourceTree = "<group>"; };
+		66AC17FE17AB5F6400C9E3A8 /* DIOSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSUser.h; sourceTree = "<group>"; };
+		66AC17FF17AB5F6400C9E3A8 /* DIOSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSUser.m; sourceTree = "<group>"; };
+		66AC180017AB5F6400C9E3A8 /* DIOSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSView.h; sourceTree = "<group>"; };
+		66AC180117AB5F6400C9E3A8 /* DIOSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSView.m; sourceTree = "<group>"; };
+		66AC180217AB5F6400C9E3A8 /* drupal-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "drupal-ios-sdk.podspec"; sourceTree = "<group>"; };
+		66AC180317AB5F6400C9E3A8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		66AC180417AB5F6400C9E3A8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		66AC180517AB5F6400C9E3A8 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		6F899D3716708E00008444E3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6F899D3B16708E0F008444E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		7A8AC4DE15EE4DA700A5E150 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -965,6 +1002,7 @@
 		0F20FDB815B567C5000996FE /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				66AC17ED17AB5F6400C9E3A8 /* drupal-ios-sdk */,
 				668368DE179EAA56003959C7 /* JSON */,
 				668368C0179EAA4D003959C7 /* HJCache */,
 				6683689A179EAA41003959C7 /* AFNetworking */,
@@ -2182,6 +2220,38 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		66AC17ED17AB5F6400C9E3A8 /* drupal-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				66AC17EE17AB5F6400C9E3A8 /* DIOSComment.h */,
+				66AC17EF17AB5F6400C9E3A8 /* DIOSComment.m */,
+				66AC17F017AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.h */,
+				66AC17F117AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.m */,
+				66AC17F217AB5F6400C9E3A8 /* DIOSEntity.h */,
+				66AC17F317AB5F6400C9E3A8 /* DIOSEntity.m */,
+				66AC17F417AB5F6400C9E3A8 /* DIOSFile.h */,
+				66AC17F517AB5F6400C9E3A8 /* DIOSFile.m */,
+				66AC17F617AB5F6400C9E3A8 /* DIOSNode.h */,
+				66AC17F717AB5F6400C9E3A8 /* DIOSNode.m */,
+				66AC17F817AB5F6400C9E3A8 /* DIOSSession.h */,
+				66AC17F917AB5F6400C9E3A8 /* DIOSSession.m */,
+				66AC17FA17AB5F6400C9E3A8 /* DIOSSystem.h */,
+				66AC17FB17AB5F6400C9E3A8 /* DIOSSystem.m */,
+				66AC17FC17AB5F6400C9E3A8 /* DIOSTaxonomy.h */,
+				66AC17FD17AB5F6400C9E3A8 /* DIOSTaxonomy.m */,
+				66AC17FE17AB5F6400C9E3A8 /* DIOSUser.h */,
+				66AC17FF17AB5F6400C9E3A8 /* DIOSUser.m */,
+				66AC180017AB5F6400C9E3A8 /* DIOSView.h */,
+				66AC180117AB5F6400C9E3A8 /* DIOSView.m */,
+				66AC180217AB5F6400C9E3A8 /* drupal-ios-sdk.podspec */,
+				66AC180317AB5F6400C9E3A8 /* LICENSE */,
+				66AC180417AB5F6400C9E3A8 /* README.md */,
+				66AC180517AB5F6400C9E3A8 /* Settings.h */,
+			);
+			name = "drupal-ios-sdk";
+			path = "Talk/Libs/drupal-ios-sdk";
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2358,6 +2428,9 @@
 				66836AC7179EAADD003959C7 /* video_play_icon@2x.png in Resources */,
 				66836ACA179EAADD003959C7 /* Tri-tone.caf in Resources */,
 				66836ACB179EAADD003959C7 /* Tri-tone.mp3 in Resources */,
+				66AC181017AB5F6400C9E3A8 /* drupal-ios-sdk.podspec in Resources */,
+				66AC181117AB5F6400C9E3A8 /* LICENSE in Resources */,
+				66AC181217AB5F6400C9E3A8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2524,6 +2597,16 @@
 				668369BD179EAAC8003959C7 /* TalkLoadMoreView.m in Sources */,
 				668369BE179EAAC8003959C7 /* TalkRefreshView.m in Sources */,
 				668369BF179EAAC8003959C7 /* TalkFollowingTableViewCell.m in Sources */,
+				66AC180617AB5F6400C9E3A8 /* DIOSComment.m in Sources */,
+				66AC180717AB5F6400C9E3A8 /* DIOSCSRFAFHTTPClient.m in Sources */,
+				66AC180817AB5F6400C9E3A8 /* DIOSEntity.m in Sources */,
+				66AC180917AB5F6400C9E3A8 /* DIOSFile.m in Sources */,
+				66AC180A17AB5F6400C9E3A8 /* DIOSNode.m in Sources */,
+				66AC180B17AB5F6400C9E3A8 /* DIOSSession.m in Sources */,
+				66AC180C17AB5F6400C9E3A8 /* DIOSSystem.m in Sources */,
+				66AC180D17AB5F6400C9E3A8 /* DIOSTaxonomy.m in Sources */,
+				66AC180E17AB5F6400C9E3A8 /* DIOSUser.m in Sources */,
+				66AC180F17AB5F6400C9E3A8 /* DIOSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

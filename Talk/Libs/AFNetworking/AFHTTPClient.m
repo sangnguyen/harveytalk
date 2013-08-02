@@ -429,6 +429,18 @@ static void AFReachabilityCallback(SCNetworkReachabilityRef __unused target, SCN
     }
 }
 
+- (void)setBaseURL:(NSURL *)baseURL {
+  if (baseURL != _baseURL) {
+    [_baseURL release];
+    _baseURL = [baseURL retain];
+    
+#ifdef _SYSTEMCONFIGURATION_H
+    [self stopMonitoringNetworkReachability];
+    [self startMonitoringNetworkReachability];
+#endif
+  }
+}
+
 - (void)enqueueBatchOfHTTPRequestOperationsWithRequests:(NSArray *)requests 
                                           progressBlock:(void (^)(NSUInteger numberOfCompletedOperations, NSUInteger totalNumberOfOperations))progressBlock 
                                         completionBlock:(void (^)(NSArray *operations))completionBlock
