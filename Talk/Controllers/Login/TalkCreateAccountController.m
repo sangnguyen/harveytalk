@@ -2,6 +2,7 @@
 #import "TalkCreateAccountController.h"
 #import "UIView+Ext.h"
 #import "UIAlertView+Ext.h"
+#import "DIOSUser.h"
 
 
 @interface TalkCreateAccountController ()
@@ -44,7 +45,26 @@
 
 
 - (IBAction)createAccountDidTouch:(id)sender {
+    NSString* emailText = self->emailTextField.text;
+    NSString* retypeEmailText = self->retypeEmailTextField.text;
+    NSString* passwordText = self->passwordTextField.text;
+    NSString* etypePasswordText = self->retypePasswordTextField.text;
     
+    NSMutableDictionary *userData = [NSMutableDictionary new];
+    [userData setObject:emailText forKey:@"name"];
+    [userData setObject:emailText forKey:@"mail"];
+    [userData setObject:passwordText forKey:@"pass"];
+    [DIOSUser
+        userRegister:userData
+        success:^(AFHTTPRequestOperation *op, id response) { /* Handle successful operation here */
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Successful" message:@"Information has been saved" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
+        failure:^(AFHTTPRequestOperation *op, NSError *err) { /* Handle operation failire here */
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not success Drupal" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
+     ];
     
 }
 
@@ -62,4 +82,5 @@
 {
    
 }
+
 @end

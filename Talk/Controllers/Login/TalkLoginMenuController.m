@@ -5,7 +5,7 @@
 #import "TalkCreateAccountController.h"
 #import "TalkForgotPasswordController.h"
 #import "UIView+Ext.h"
-
+#import "DIOSUser.h"
 
 
 
@@ -21,6 +21,21 @@
 
 - (IBAction)loginButtonDidTouch:(id)sender {
     //TODO
+    NSString* emailText = self->emailTextField.text;
+    NSString* passwordText = self->passwordTextField.text;
+    
+    [DIOSUser
+        userLoginWithUsername:emailText
+        andPassword:passwordText
+        success:^(AFHTTPRequestOperation *op, id response) { /* Handle successful operation here */
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Successful" message:@"The User has been login, make sure to logout (TODO)" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
+        failure:^(AFHTTPRequestOperation *op, NSError *err) { /* Handle operation failire here */
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Not success Drupal" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alert show];
+        }
+    ];
 }
 - (IBAction)forgotPasswordDidTouch:(id)sender {
     TalkForgotPasswordController * controller = [[TalkForgotPasswordController alloc]init];

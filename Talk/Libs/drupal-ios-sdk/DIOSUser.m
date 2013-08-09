@@ -297,18 +297,21 @@ static NSInteger anonymous_user = 0;
                                               success:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
                                               failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure
 {
-    NSString *path = [NSString stringWithFormat:@"%@/resetpassword/%@", kDiosEndpoint, email];
+    NSString *path = [NSString stringWithFormat:@"%@/%@/password_reset", kDiosEndpoint, kDiosBaseUser];
+    
+    NSMutableDictionary *userData = [NSMutableDictionary new];
+    [userData setObject:email forKey:@"mail"];
     
     if ([[DIOSSession sharedSession] signRequests]) {
         [[DIOSSession sharedSession] sendSignedRequestWithPath:path
                                                         method:@"POST"
-                                                        params:nil
+                                                        params:userData
                                                        success:success
                                                        failure:failure];
     }
     else {
         [[DIOSSession sharedSession] postPath:path
-                                   parameters:nil
+                                   parameters:userData
                                       success:success
                                       failure:failure];
     }
